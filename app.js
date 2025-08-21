@@ -53,6 +53,7 @@ function mostrarTareas() {
         listaTareas.appendChild(li);
     });
 }
+
 // Cargar las tareas desde localStorage al iniciar la página
 function cargarTareas() {
     const tareasGuardadas = JSON.parse(localStorage.getItem('tareas')); // Obtener las tareas guardadas en localStorage
@@ -84,4 +85,3 @@ inputTarea.addEventListener('keypress', (e) => {
         botonAgregar.click(); // Simula un clic en el botón de agregar tarea
     }
 });
-
